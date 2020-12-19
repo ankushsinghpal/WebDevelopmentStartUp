@@ -1,0 +1,103 @@
+/* for relative css units -To make the page dynamic*/
+
+html{
+    font-size: 20px;
+}
+
+section{
+    width:500px;
+    height:500px;
+    background-color: tomato;
+}
+
+#box{
+    width:50%;
+    height:50%;
+    background-color:rgb(72, 226, 226);
+}
+
+#ems  h1{
+    font-size: 50px;
+    border:1px solid black;
+    /* 200% of font size=80px; */
+    inline-size: 200%;  
+}
+
+
+#ems  article{
+    font-size: 20px;
+}
+
+#ems  p{
+    font-size: 1em;
+}
+
+#ems  h2{
+    font-size: 2em;
+    /* margin 1em will be equal to size of font-size that is 2em in current situation --related to the current element */
+    margin:1em;
+}
+
+#ems h3{
+    font-size: 0.5em;
+}
+
+#ems  button{
+    font-size:1em;
+    padding:0 1em;
+    border-radius: 0.5em;
+    background-color:tan;
+    color:black;
+}
+
+
+#rems button{
+    font-size: 2rem;
+    padding:0 2rem;
+    border-radius: 0.7rem;
+    background-color: teal;
+    color:whitesmoke;
+}
+
+#ems {
+font-size: 15px;
+}
+
+#ems ul{
+    font-size:0.8em; 
+}
+
+#rems h1{
+    font-size: 2rem;
+}
+
+#rems h2{
+    font-size: 3rem;
+}
+
+#rems ul{
+    font-size: 0.8rem;
+}
+
+
+nav{
+    width:500px;
+    height:500px;
+    background-color: rgb(255, 136, 0);
+    margin:5px;
+}
+/* rgba to just the element */
+#alpha {
+    height:50%;
+    width:50%;
+    background-color: rgba(255,255,255,0.8);
+    /* margin:5px; */
+}
+
+/* opacity applies to all elements */
+#opacity {
+    height:50%;
+    width:50%;
+    background-color:yellow;
+    opacity:0.3;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- Inline styles -->
+    <h1
+        style="color:palegreen;background-color:yellow;border: 5px solid hsl(10, 10%, 40%);outline: 5px solid hsl(0, 0%, 60%);">
+        Form Elements</h1>
+    <form action="/tacho" method="" style="background-color: burlywood;outline: 5px solid hsl(0, 0%, 20%);">
+
+        <p>
+            <label for="username">Enter UserName:</label>
+            <input type="text" id="username" name="username" placeholder="UserName">
+        </p>
+        <p>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password" placeholder="password">
+        </p>
+        <p>
+            <label for="color">Select Color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <label>Enter Number:
+                <input type="number" id="num" name="number">
+            </label>
+
+        </p>
+        <button type="button">Regular Button won't Submit</button>
+        <button>Submit!!!!!</button>
+        <input type="submit" value="Click Me!!!!">
+
+    </form>
+    <hr>
+    <h2>Hijacking the Google Search</h2>
+    <form action="https://www.google.com/search" method="" style="box-shadow:
+    0 0 0 10px hsl(0, 0%, 80%),
+    0 0 0 15px hsl(0, 0%, 90%);">
+        <input type="text" name="q" placeholder="Enter value to Search In Google">
+        <button>Google Search</button>
+    </form>
+    <hr>
+
+    <h2>More Inputs!!!!</h2>
+    <form action="/birds" style="outline: 5px solid hsl(0, 0%, 60%);">
+        <input type="checkbox" name="agree" id="agree" value="Agreed">
+        <label for="agree">I Agree</label>
+        <!-- name will appear in url -->
+        <!-- name is same for all radio buttons to connect all -->
+        <!-- value will appear in the url after submitting -->
+        <p>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="s" value="s" checked>
+            <label for="s">S</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="m">M</label>
+        </p>
+        <p>
+            <label for="meal">Choose a Meal:</label>
+            <select name="meals" id="meal">
+                <option value="">--Please choose an Option--</option>
+                <option value="Fish" selected>Fish</option>
+                <option value="Veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" name="cheese" value="15" min="1" max="100" step="4">
+        </p>
+        <p>
+            <label for="requests">Any Special Requests:</label>
+            <textarea name="requests" id="requests" cols="30" rows="10" placeholder="Enter the Requests"></textarea>
+        </p>
+        <button>SUBMIT</button>
+    </form>
+    <hr>
+    <!-- html 5  server side validation -->
+    <h2>HTML 5 Validations</h2>
+    <form action="/apps">
+        <label for="user">Enter User:</label>
+        <input type="text" name="user" id="user" required>
+        <label for="first">Enter firstName:</label>
+        <input type="text" name="first" id="first" minlength="5" maxlength="10" required>
+        <label for="email">Enter Email:</label>
+        <input type="email" name="url" id="email" required>
+        <label for="url">Enter Url:</label>
+        <input type="url" name="url" id="url" required>
+        <button>submit!!!</button>
+    </form>
+    <hr>
+    <button>Not Inside Form</button>
+    <a href="wiki.html">Go Back to Wiki Page:</a>
+    <hr>
+</body>
+
+</html>

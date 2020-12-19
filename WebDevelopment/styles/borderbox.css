@@ -1,0 +1,45 @@
+div{
+    width:210px;
+    border:1px solid grey;
+    text-align: center;
+    border-radius: 5px;
+    /* display: flex; */
+    margin: 0 auto;
+    border-width: 2px 10px;
+}
+
+img{
+    width:200px;
+    border:5px solid rgb(225, 226, 223);
+    border-radius: 50%;
+}
+
+h1{
+    color:teal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    display:block;
+
+}
+
+
+button{
+    display:inline;
+}
+/* padding is a space between content and border */
+.padding{
+    padding:10px 6px 20px 4px;
+    /* margin-left: 50%; */
+    /* margin: auto; */
+  
+}
+
+/* margin is a spacing on the outside of the border */
+.margin{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

@@ -1,0 +1,186 @@
+/* pseudo classes 
+active
+checked
+first
+first-child
+hover
+not()
+:nth-child()
+:nth-of-type()
+*/
+
+
+
+body{
+    
+    padding: 20px; 
+    text-align: auto;  
+    border: 5px solid hsl(261, 93%, 23%);
+    min-height: 200px;
+    width: 50vw;
+    background-color: #f1faee;
+    background-position: 100px 10%;
+    background-size: 100px 50px;
+    background-image: linear-gradient(105deg, rgb(205, 211, 211) 39%, rgb(221, 234, 236) 96%);
+
+}
+
+
+div{
+    height:40px;
+    width:100px;
+    border:2px solid black;
+    background-color: yellow;
+    /* display:flex;
+    flex-wrap: wrap; */
+    display:inline-block;
+    margin:10px;
+}
+/* main{
+    margin:0 auto;
+} */
+
+button{ 
+    color:#faa307;
+}
+
+
+h2 ::first-letter {
+    font-size: 50px;
+}
+
+ 
+h1,h2{
+    color:#990c3b;
+    font-family:cursive;
+    font-size: 20px;
+    font-weight: 100;
+}
+ 
+/* single id should be assigned to single one element */
+#signup{
+    color:#bdb2ff;
+    background-color: #b5838d;
+    margin: 10px auto;
+    border-radius: 20px;
+    outline: 5px solid hsl(270, 71%, 84%);
+}
+
+
+
+span{
+    color:#f72585;
+}
+
+/* class */
+.tags{
+    background-color: #f72585;
+    color:aquamarine;
+    font-size:14px;
+}
+
+/* descendant */
+span a{
+    color:#5f0f40;
+}
+
+footer a{
+    color:rgb(91, 36, 192);
+}
+
+.post a {
+    text-decoration: overline red;
+    font-weight: bold;   
+}
+
+/* Adjacent decendant */
+input + button{
+    background-color: black;
+}
+
+h2 + button{
+    font-size: 14px;
+    background-color: limegreen;
+    color:lightcyan;
+}
+
+/* direct decendant */
+footer > a {
+    color:darkred;
+}
+
+footer > nav{
+    background-color: rgb(228, 180, 163);
+    background-image: radial-gradient(circle, rgb(156, 245, 156) 39%, rgb(21, 186, 219) 96%);
+    background-size: 60px 40px;
+    border:5px solid rgb(64, 65, 64);
+}
+
+/* Attribute css selector */
+input[type="password"]{
+    background-color: rgb(203, 233, 164);
+    color:rgb(15, 11, 228);
+    border-radius: 20px;
+}
+
+input[type="text"]{
+    background-color: rgb(218, 236, 48);
+    color:rgb(159, 11, 228);
+    border-radius: 5px;
+}
+
+section[class="post"]{
+    background-color: rgb(218, 247, 226);
+    padding:10px;
+}
+
+h2::first-letter {
+    color: rgb(99, 97, 97);
+    font-size: 30px;
+  }
+
+.post{
+    outline: 5px solid greenyellow;
+    /* margin: 5px ,auto; */
+}
+
+a[href*="google"]{
+    color: red ;
+}
+
+li{
+    text-transform: uppercase;
+}
+
+.post button:hover{
+    background-color: rgb(245, 226, 226);
+    color:darkslategray;
+    font-size: 10px;
+
+}
+
+/* change after clicking button */
+.post button:active{
+    background-color: rgb(219, 41, 41);
+    color:rgb(234, 236, 236);
+
+}
+/* just second element */
+footer li:nth-of-type(3n){
+    background-color: rgb(223, 167, 167);
+}
+/* every second element
+footer li:nth-of-type(2n){
+    background-color: rgba(174, 236, 149, 0.486);
+} */
+
+     /* Unvisited links */
+   a:link{
+        color: rgb(255, 81, 0);
+     }  
+        
+     /* Visited links */
+    a:visited {
+         color: rgb(158, 135, 241);
+      }  
+
